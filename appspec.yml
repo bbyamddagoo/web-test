@@ -3,6 +3,7 @@ os: linux
 files: 
   - source: /index.html
     destination: /var/www/html/
+
 hooks:
   BeforeInstall:
     - location: scripts/BeforeInstall
@@ -12,5 +13,3 @@ hooks:
     - location: scripts/AfterInstall
       timeout: 300
       runas: root
-  AllowTraffic:
-    - timeout: 300
